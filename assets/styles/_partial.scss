@@ -1,0 +1,98 @@
+@supports (display:grid) {
+    .maximg {
+        object-fit: cover;
+        width: 100%;
+    }
+    
+    .hide {
+        display: block;
+    }
+
+    @media screen and (min-width: 361px) {
+        .grid {
+            margin: 2.5em 1.5em;
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: auto auto auto auto;
+            grid-template-areas:
+                'a b d d'
+                'a b f f'
+                'a e f f'
+                'g h f f'
+                'i i k k';
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        .grid {
+            margin: 2.5em 1.5em;
+            text-align: center;
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: auto auto;
+            grid-template-areas:
+                'a'
+                'f'
+                'd'
+                'e'
+                'g'
+                'h'
+                'b'
+                'k';
+        }
+    }
+
+    .grid-item__a {
+        grid-area: a;
+    }
+
+    .grid-item__b {
+        grid-area: b;
+    }
+
+    .grid-item__c {
+        grid-area: c;
+    }
+
+    .grid-item__d {
+        grid-area: d;
+    }
+
+    .grid-item__e {
+        grid-area: e;
+    }
+
+    .grid-item__f {
+        grid-area: f;
+    }
+
+    .grid-item__g {
+        grid-area: g;
+    }
+
+    .grid-item__h {
+        grid-area: h;
+    }
+
+    .grid-item__i {
+        grid-area: i;
+    }
+
+    .grid-item__j {
+        grid-area: j;
+    }
+
+    .grid-item__k {
+        grid-area: k;
+    }
+}
+
+@supports (display:flex) {
+    #bands {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

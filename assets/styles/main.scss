@@ -1,0 +1,76 @@
+@import url(fontawesome-all.min.css);
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import 'variables';
+@import 'funciones';
+@import 'anidado';
+
+//partial importado al final del archivo
+
+/* Base Rules */
+
+body {
+    background: $bg-color;
+    margin: $centrado;
+}
+
+h1 {
+    margin-bottom: 0.7em;
+}
+
+button {
+    margin: var(--margen);
+}
+
+/* Layout Rules */
+
+main {
+    text-align: center;
+    color: var(--blanco);
+}
+
+form {
+    width: 40%;
+    margin: var(--margen);
+}
+
+/* Module Rules */
+
+.bandsdiv {
+    width: auto;
+    display: inline-block;
+}
+
+.maximg {
+    width: 50%;
+}
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.list-group-item {
+    width: 30%;
+    margin: $centrado;
+}
+
+#logo {
+    width: 30%;
+    margin-right: 30px;
+}
+
+#articleimage {
+    object-fit: contain;
+}
+
+#mainimg {
+    margin-top: 2em;
+}
+
+/* State Rules */
+
+.hide {
+    display: none;
+}
+
+@import 'partial';
