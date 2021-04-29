@@ -1,0 +1,15 @@
+/* Layout Rules */
+
+.bg-image-full {
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+#articleimage {
+    object-fit: contain;
+}
+
+.list-group-item {
+    width: 30%;
+    margin: $centrado;
+}

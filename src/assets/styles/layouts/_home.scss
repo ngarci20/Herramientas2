@@ -1,0 +1,38 @@
+/* Base Rules */
+
+body {
+    background: $bg-color;
+    margin: $centrado;
+}
+
+h1 {
+    margin-bottom: 0.7em;
+}
+
+main {
+    text-align: center;
+    color: var(--blanco);
+}
+
+nav {
+    background-color: var(--negro);
+}
+
+/* Layout Rules */
+
+.max {
+    max-width: 60%;
+}
+
+#logo {
+    width: 30%;
+}
+/* Module Rules */
+
+/* State Rules */
+
+/* Theme Rules */
+
+.btn-warning {
+    background-color: #FFC107;
+}

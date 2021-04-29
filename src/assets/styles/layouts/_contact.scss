@@ -1,0 +1,19 @@
+@import '../funciones';
+
+/* Base Rules */
+@supports (display:flex) {
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+form,
+input,
+select {
+    width: 40%;
+    margin: var(--margen);
+}
